@@ -22,10 +22,7 @@ imgSelector.addEventListener("change", function () {
         });
     });
 });
-//refreshbtn.addEventListener("click", function () {
-// Load random song based on mood
-//loadSong(currentMood);
-//});
+
 function processImage(callback) {
     var file = imgSelector.files[0]; //get(0) is required as imgSelector is a jQuery object so to get the DOM object, its the first item in the object. files[0] refers to the location of the photo we just chose.
     var reader = new FileReader();
@@ -89,7 +86,7 @@ function sendEmotionRequest(file, callback) {
     });
 }
 // Section of code that handles the mood
-//A Mood class which has the mood as a string and its corresponding emoji
+//A Mood class which has the mood as a string. 
 var Mood = (function () {
     function Mood(mood, text) {
         this.mood = mood;
@@ -114,7 +111,6 @@ function getCurrMood(scores) {
         currentMood = happy;
         var element = document.getElementById("page-subheader")
         element.innerHTML="Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you. 1Thessalonians 5:16-18";
-       //pagesubheader.innerHTML = document.write("<b>I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world. John 16:33</b>”");
     }
     else if (scores.sadness > 0.4) {
         currentMood = sad;
