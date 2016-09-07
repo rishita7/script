@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Script</title>
+        <!--Boostrap's CSS-->
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    </head>
+    <body>
+        <div class="container" id="page-container">
+            <h1 id="app-name">
+                <span class="glyphicon glyphicon-book"></span> Script
+            </h1>
+            <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
+
+            <h2 id="page-header">
+                Generates a Bible verse based on how feel...
+            </h2>
+            <h3 id = "page-subheader"> 
+                Jesus answered, "It is written: 'Man shall not live on bread alone, but on every word that comes from the mouth of God.'" Matthew 4:4
+
+            </h3> 
+            <div class="btn-wrapper">
+                <label class="btn btn-info" for="my-file-selector">
+                    <input id="my-file-selector" type="file">
+                    Upload a picture 
+                </label>
+                <button type="button" class="btn btn-info" id="refreshbtn">Another verse please</button>
+            </div>
+        </div>
+        <!-- 
+            NB: You generally do not want to publically expose the server structure (eg. ./node_modules/...)
+            will sort that in later bootcamps with task-runners and the like.
+            For now this is just a demonstration.
+
+            Alternatively can use CDNs for bootstrap/jquery
+        -->
+
+        <!--jQuery Script-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap Script-->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
