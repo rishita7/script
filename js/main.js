@@ -64,7 +64,7 @@ function sendEmotionRequest(file, callback) {
         beforeSend: function (xhrObj) {
             // Request headers
             xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "d342c8d19d4e4aafbf64ed9f025aecc8");
+            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "fdba19c6fb1345479d45a4b4046dc2c8");
         },
         type: "POST",
         data: file,
