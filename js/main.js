@@ -149,4 +149,3 @@ function getverse(scores, text) {
     }
     return text;
 }
-
