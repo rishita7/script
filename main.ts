@@ -97,10 +97,10 @@ var Mood = (function () {
     }
     return Mood;
 }());
-var happy = new Mood("happy", "http://emojipedia-us.s3.amazonaws.com/cache/a0/38/a038e6d3f342253c5ea3c057fe37b41f.png");
-var sad = new Mood("sad", "https://cdn.shopify.com/s/files/1/1061/1924/files/Sad_Face_Emoji.png?9898922749706957214");
-var angry = new Mood("angry", "https://cdn.shopify.com/s/files/1/1061/1924/files/Very_Angry_Emoji.png?9898922749706957214");
-var neutral = new Mood("neutral", "https://cdn.shopify.com/s/files/1/1061/1924/files/Neutral_Face_Emoji.png?9898922749706957214");
+var happy = new Mood("happy", "I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world. John 16:3");
+var sad = new Mood("sad", "The LORD himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged. Deuteronomy 31:8");
+var angry = new Mood("angry", "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, because human anger does not produce the righteousness that God desires. James 1:19-20");
+var neutral = new Mood("neutral", "For God is not a God of confusion but of peace 1Corinthians 14:33");
 // any type as the scores values is from the project oxford api request (so we dont know the type)
 function getCurrMood(scores) {
     // In a practical sense, you would find the max emotion out of all the emotions provided. However we'll do the below just for simplicity's sake :P
